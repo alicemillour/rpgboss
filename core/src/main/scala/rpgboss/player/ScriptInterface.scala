@@ -544,6 +544,7 @@ class ScriptInterface(
         allowCancel = allowCancel, justification = RIGHT))
 
     val choice = choiceWindow.getChoice()
+    // Javascript is called
     choiceWindow.close()
 
     questionWindow.close()

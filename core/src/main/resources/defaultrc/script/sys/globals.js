@@ -79,7 +79,7 @@ game.gameOver = function() {
   
     var choiceIdx = choiceWin.getChoice();
     choiceWin.close();
-  
+    game.log("Choice result = " + choiceIdx)	
     if (choiceIdx == 0) {
       game.setTransition(1, 0.4);
       game.sleep(0.4);
@@ -271,7 +271,7 @@ game.getStringInput = function(message, maxLength, initial) {
   valueWindow.close();
   messageWindow.close();
   
-  game.log("game.getStringInput result = " + value)
+  game.log("game.getStringInput result is " + value)
   return value;
 };
 
